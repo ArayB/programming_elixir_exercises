@@ -5,3 +5,15 @@ fizzbuzz = fn
   _, _, n -> n
 end
 
+buzzer = fn n ->
+    fizzbuzz.(rem(n,3), rem(n,5), n)
+end
+
+IO.puts buzzer.(10)
+IO.puts buzzer.(11)
+IO.puts buzzer.(12)
+IO.puts buzzer.(13)
+IO.puts buzzer.(14)
+IO.puts buzzer.(15)
+IO.puts buzzer.(16)
+IO.puts buzzer.(17)
